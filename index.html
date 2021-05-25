@@ -21,37 +21,20 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="row">9AM</th>
-            <td>Jacob</td>
-            <td>@fat</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">10AM</th>
-            <td>Jacob</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">11AM</th>
-            <td>Jacob</td>
-            <td>@fat</td>
-            <td>test</td>
-          </tr>
-          <tr>
-            <th scope="row">12PM</th>
-            <td colspan="4">Larry the Bird</td>
-            <td>save</td>
-            
-            
-          </tr>
-        </tbody>
-      </table>
+      <div class="container">
+        <div class="row">
+          <div class="col order-last">
+            First in DOM, ordered last
+          </div>
+          <div class="col">
+            Second in DOM, unordered
+          </div>
+          <div class="col order-first">
+            Third in DOM, ordered first
+          </div>
+        </div>
+      </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
