@@ -1,7 +1,7 @@
 
 // Create variable
 var saveBtn = document.querySelector('#saveBtn');
-var inputText = document.querySelector('.inputText').value
+var inputText = document.querySelector('.inputText');
 
 //use Moment.js to set the current date & time
 var today = moment();
@@ -16,18 +16,16 @@ $("#currentTime").text(curTime.format('h:mm:ss a'));
 //tab is green for the future
 //after input text and click Save btn, input info go to LocalStorage
 
+saveBtn.addEventListener('click', function) {
+    SaveText();
+}
 
-function inputDaily(){
-    var daily = localStorage.getItem(".inputText");
-};
+function SaveText(){
+    var saveContent = document.querySelector(".inputText").value;
+    localStorage.setItem("saveContent", saveContent);
+    
+}
 
-saveBtn.addEventListener("click", function() {
- inputDaily;
-    var inputText = document.querySelector('.inputText').value;
-    localStorage.setItem("textarea",inputText);
-
-});
-
-window.onload = function(){
-    var refreshPage = localStorage.getItem(inputText);
+function LoadText(){
+    var 
 }
